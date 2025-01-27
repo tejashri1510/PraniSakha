@@ -5,12 +5,14 @@ import styles from './SymptomChecker.module.css';
 const SymptomChecker = () => {
   const [symptoms, setSymptoms] = useState('');
   const [guidance, setGuidance] = useState('');
+  const [disease, setDisease] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/symptoms', { symptoms });
+      const response = await axios.post('http://localhost:5000/api/symptoms', { symptoms });
       setGuidance(response.data.guidance);
+      setDisease(response.data.diseaseClass);
     } catch (error) {
       console.error('Error checking symptoms:', error);
     }
@@ -28,9 +30,20 @@ const SymptomChecker = () => {
         />
         <button type="submit" className={styles.button}>Check Symptoms</button>
       </form>
-      {guidance && <div className={styles.result}>{guidance}</div>}
+      {disease && (
+        <div className={styles.result}>
+          <h4>Predicted Disease Class:</h4>
+          <p>{disease}</p>
+        </div>
+      )}
+      {guidance && (
+        <div className={styles.result}>
+          <h4>Care Guidance:</h4>
+          <p>{guidance}</p>
+        </div>
+      )}
     </div>
   );
 };
 
-export default SymptomChecker
+export default SymptomChecker;

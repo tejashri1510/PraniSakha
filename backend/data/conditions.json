@@ -1,0 +1,18 @@
+[
+    {
+      "name": "Fever",
+      "keywords": ["fever", "high temperature", "warm"],
+      "care": "Provide plenty of water and a cool environment. Monitor for additional symptoms."
+    },
+    {
+      "name": "Skin Infection",
+      "keywords": ["rash", "itching", "red spots"],
+      "care": "Clean the affected area with antiseptic and consult a vet for medication."
+    },
+    {
+      "name": "Digestive Issues",
+      "keywords": ["vomiting", "diarrhea", "loss of appetite"],
+      "care": "Provide a bland diet and ensure hydration. Visit a vet if symptoms persist."
+    }
+  ]
+  

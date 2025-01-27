@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const authRoutes = require("./routes/auth");
-
+const symptomRoutes = require("./routes/symtomRoutes");
 dotenv.config();
 
 const app = express();
@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(cors()); 
 
 app.use("/api/auth", authRoutes);
+app.use("/api/symptoms", symptomRoutes);
 
 app.get("/", (req, res) => {
   res.send("<h1>Server is running! Welcome to the PraniSakha Backend.</h1>");

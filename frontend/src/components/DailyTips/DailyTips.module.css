@@ -1,0 +1,88 @@
+
+.dailyTipsContainer {
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 82vh; 
+    width: 100%;
+    padding: 2%;
+    margin: 0;
+ 
+    background-color: #282c34;
+}
+
+
+.pageTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff; 
+    text-align: center;
+
+}
+.par{
+    
+    color: #fff;
+}
+
+
+.dailyTipsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.loading,
+.error {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.dailyTipsCard {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dailyTipsCard:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+
+.cardTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cardDescription {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.des {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    text-align: center;
+}

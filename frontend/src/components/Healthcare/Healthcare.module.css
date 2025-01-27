@@ -1,0 +1,61 @@
+@import '../../var.css';
+.healthcare {
+    text-align: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .symptomCheckerButton {
+    background: linear-gradient(135deg, #00bcd4, #009688);
+  }
+  
+  .symptomCheckerButton:hover {
+    background: linear-gradient(135deg, #009688, #00bcd4);
+  }
+  
+  .askVetButton {
+    background: linear-gradient(135deg, #00bcd4, #009688);
+  }
+  
+  .askVetButton:hover {
+    background: linear-gradient(135deg, #009688, #00bcd4);
+  }
+  
